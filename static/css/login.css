@@ -1,0 +1,66 @@
+body {
+  background-image: url("../img/building.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45); }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff; }
+  .wrapper .main-heading {
+    font-family: serif;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 4px #000; }
+  .wrapper .form {
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.1rem; }
+    .wrapper .form .form-input {
+      display: block;
+      width: 100%;
+      padding: 8px 12px;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 1.1rem; }
+      .wrapper .form .form-input::placeholder {
+        color: #eee; }
+      .wrapper .form .form-input:focus {
+        outline: none; }
+    .wrapper .form .login-button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 8px 25px;
+      color: #fff;
+      background: #007bff;
+      border: 1px outset #007bff;
+      transition: background-color 0.3s ease, border 0.3s ease;
+      text-shadow: 0px 1px 4px #444;
+      letter-spacing: 1px; }
+      .wrapper .form .login-button:hover {
+        background-color: #0076f5;
+        border: 1px outset #0076f5; }
+  .wrapper footer {
+    font-family: Georgia, "Times New Roman", Times, serif; }
+    .wrapper footer .footer-brand {
+      color: #007bff; }

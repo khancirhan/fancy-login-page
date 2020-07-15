@@ -1,0 +1,91 @@
+$primary: #007bff;
+
+
+body {
+  background-image: url("../img/building.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(#000, 0.45);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+
+  .main-heading {
+    font-family: serif;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  .form {
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.1rem;
+
+    .form-input {
+      display: block;
+      width: 100%;
+      padding: 8px 12px;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+
+      &::placeholder {
+        color: #eee;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .login-button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 8px 25px;
+      color: #fff;
+      background: $primary;
+      border: 1px outset $primary;
+      transition: background-color 0.3s ease, border 0.3s ease;
+      text-shadow: 0px 1px 4px #444;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: darken($primary, 2);
+        border: 1px outset darken($primary, 2);
+      }
+    }
+  }
+
+  footer {
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    .footer-brand {
+      color: $primary;
+    }
+  }
+}
